@@ -13,6 +13,9 @@
 		9E5800FB1FCE5484004B297C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E5800FA1FCE5484004B297C /* Assets.xcassets */; };
 		9E5800FE1FCE5484004B297C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E5800FC1FCE5484004B297C /* LaunchScreen.storyboard */; };
 		9E5801011FCE5484004B297C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5801001FCE5484004B297C /* main.m */; };
+		9E58010A1FCE5502004B297C /* BMSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5801091FCE5502004B297C /* BMSearchView.m */; };
+		9E58010F1FCE5549004B297C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E58010E1FCE5549004B297C /* UIView+Extension.m */; };
+		9ED07AC71FD4E0B4007223BA /* BMSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED07AC61FD4E0B4007223BA /* BMSearchVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		9E5800FD1FCE5484004B297C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E5800FF1FCE5484004B297C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E5801001FCE5484004B297C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E5801081FCE5502004B297C /* BMSearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMSearchView.h; sourceTree = "<group>"; };
+		9E5801091FCE5502004B297C /* BMSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMSearchView.m; sourceTree = "<group>"; };
+		9E58010D1FCE5549004B297C /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		9E58010E1FCE5549004B297C /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		9ED07AC51FD4E0B4007223BA /* BMSearchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMSearchVC.h; sourceTree = "<group>"; };
+		9ED07AC61FD4E0B4007223BA /* BMSearchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMSearchVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +48,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E21302C1FCFB9740089F85B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		9E5800E51FCE5484004B297C = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +74,7 @@
 		9E5800F01FCE5484004B297C /* BMSearch */ = {
 			isa = PBXGroup;
 			children = (
+				9E21302C1FCFB9740089F85B /* Map */,
 				9E5801071FCE54C2004B297C /* Classes */,
 				9E5800F11FCE5484004B297C /* AppDelegate.h */,
 				9E5800F21FCE5484004B297C /* AppDelegate.m */,
@@ -75,8 +92,30 @@
 		9E5801071FCE54C2004B297C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9E58010B1FCE5524004B297C /* Categories */,
+				9E58010C1FCE5524004B297C /* Utils */,
+				9E5801081FCE5502004B297C /* BMSearchView.h */,
+				9E5801091FCE5502004B297C /* BMSearchView.m */,
+				9ED07AC51FD4E0B4007223BA /* BMSearchVC.h */,
+				9ED07AC61FD4E0B4007223BA /* BMSearchVC.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		9E58010B1FCE5524004B297C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9E58010D1FCE5549004B297C /* UIView+Extension.h */,
+				9E58010E1FCE5549004B297C /* UIView+Extension.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		9E58010C1FCE5524004B297C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E58010F1FCE5549004B297C /* UIView+Extension.m in Sources */,
+				9ED07AC71FD4E0B4007223BA /* BMSearchVC.m in Sources */,
 				9E5800F61FCE5484004B297C /* ViewController.m in Sources */,
+				9E58010A1FCE5502004B297C /* BMSearchView.m in Sources */,
 				9E5801011FCE5484004B297C /* main.m in Sources */,
 				9E5800F31FCE5484004B297C /* AppDelegate.m in Sources */,
 			);
@@ -288,14 +330,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3D9K6K9886;
 				INFOPLIST_FILE = BMSearch/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bmu.BMSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,14 +347,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3D9K6K9886;
 				INFOPLIST_FILE = BMSearch/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bmu.BMSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
